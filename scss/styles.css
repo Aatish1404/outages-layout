@@ -1,0 +1,25 @@
+:root {
+  --black:#313131;
+  --white:#ffffff;
+  --grey:#B1B2B5;
+  --lightGrey:#d0d1d4;
+  --darkGrey:#575758;
+  --fullWidth: 1110px;
+  --headerHeight:60px;
+  --fullHeight: 600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--blue);
+}/*# sourceMappingURL=styles.css.map */
