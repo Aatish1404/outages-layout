@@ -86,6 +86,7 @@
             line-height:20px;
             vertical-align:middle;
             text-align:center;
+            animation: 1s blink ease infinite;
 
             &.active{
                 background:var(--green);
@@ -94,3 +95,13 @@
 }
 
 }
+
+
+@keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
