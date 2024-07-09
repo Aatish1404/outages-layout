@@ -2,9 +2,9 @@
   --black:#313131;
   --white:#ffffff;
   --grey:#B1B2B5;
-  --lightGrey:#d0d1d4;
+  --lightGrey:#757575;
   --darkGrey:#232324;
-  --blue:#0e48e9;
+  --blue:#7f8fbb;
   --darkBlue:#031853;
   --green:#41e90e;
   --red:#e9150e;
@@ -64,7 +64,7 @@ body {
 }
 .wrapper .card .card-content h5 {
   font-size: 15px;
-  color: var(--white);
+  color: var(--blue);
   margin-bottom: 5px;
   text-transform: uppercase;
 }
