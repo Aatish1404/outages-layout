@@ -4,7 +4,7 @@
 
 .wrapper{
 
-    width: 900px;
+    width: var(--fullWidth);
     font-family: $Montserrat;
 
     h1{
@@ -20,11 +20,12 @@
 .card {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 1rem;
     background-color: var(--darkGrey);
-    border: 1px solid #DDD;
+    border: 1px solid var(--lightGrey);
     border-radius: 5px;
-    margin:1rem 0;
+    margin: 1rem 0;
+    gap: 1rem;
 
     .card-content {
         margin: 0 15px;
@@ -36,29 +37,60 @@
         h4 {
           font-size: 18px;
           color: var(--white);
+          margin: 5px 0;
+          @include uppercase;
         }
 
         h5 {
             font-size: 15px;
             color: var(--white);
+            margin-bottom: 5px;
+            @include uppercase;
           }
 
-        p {
+        span {
           font-size: 15px;
-          color: var(--blue);
+          color: var(--grey);
+          margin-bottom: 5px;
+
+          .opacity{
+            color: var(--lightGrey);
+          }
+          
         }
+
+        
       }
 
       .card-timer {
-        font-size: 20px;
-        height: 1em;
-        flex-shrink: 0;
-        
-        .card-icon{
 
-        }
-       
+        p {
+            font-size: 14px;
+            color: var(--white);
+
+            &:first-child{
+                margin-bottom: 5px;
+              }
+          }
+
+         
+               
       }
+
+      .card-icon{
+            margin-left: 1rem;  
+            width: 16px;
+            height: 16px;
+            background:var(--red);
+            border-radius:50%;
+            line-height:20px;
+            vertical-align:middle;
+            text-align:center;
+
+            &.active{
+                background:var(--green);
+            }
+        }
 }
 
 }

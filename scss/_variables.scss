@@ -8,12 +8,17 @@ $Montserrat: "Montserrat", sans-serif;;
     --white:#ffffff;
     --grey:#B1B2B5;
     --lightGrey:#d0d1d4;
-    --darkGrey:#575758;
+    --darkGrey:#232324;
     --blue:#0e48e9;
     --darkBlue:#031853;
-    --fullWidth: 1110px;
-    --headerHeight:60px;
+    --green:#41e90e;
+    --red:#e9150e;
+    --fullWidth: 900px;
     --fullHeight: 600px;
 
+}
+
+@mixin uppercase{
+    text-transform:uppercase;
 }
 

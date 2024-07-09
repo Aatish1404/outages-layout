@@ -3,11 +3,12 @@
   --white:#ffffff;
   --grey:#B1B2B5;
   --lightGrey:#d0d1d4;
-  --darkGrey:#575758;
+  --darkGrey:#232324;
   --blue:#0e48e9;
   --darkBlue:#031853;
-  --fullWidth: 1110px;
-  --headerHeight:60px;
+  --green:#41e90e;
+  --red:#e9150e;
+  --fullWidth: 900px;
   --fullHeight: 600px;
 }
 
@@ -27,7 +28,7 @@ body {
 }
 
 .wrapper {
-  width: 900px;
+  width: var(--fullWidth);
   font-family: "Montserrat", sans-serif;
 }
 .wrapper h1 {
@@ -41,11 +42,12 @@ body {
 .wrapper .card {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   background-color: var(--darkGrey);
-  border: 1px solid #DDD;
+  border: 1px solid var(--lightGrey);
   border-radius: 5px;
   margin: 1rem 0;
+  gap: 1rem;
 }
 .wrapper .card .card-content {
   margin: 0 15px;
@@ -57,17 +59,40 @@ body {
 .wrapper .card .card-content h4 {
   font-size: 18px;
   color: var(--white);
+  margin: 5px 0;
+  text-transform: uppercase;
 }
 .wrapper .card .card-content h5 {
   font-size: 15px;
   color: var(--white);
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
-.wrapper .card .card-content p {
+.wrapper .card .card-content span {
   font-size: 15px;
-  color: var(--blue);
+  color: var(--grey);
+  margin-bottom: 5px;
 }
-.wrapper .card .card-timer {
-  font-size: 20px;
-  height: 1em;
-  flex-shrink: 0;
+.wrapper .card .card-content span .opacity {
+  color: var(--lightGrey);
+}
+.wrapper .card .card-timer p {
+  font-size: 14px;
+  color: var(--white);
+}
+.wrapper .card .card-timer p:first-child {
+  margin-bottom: 5px;
+}
+.wrapper .card .card-icon {
+  margin-left: 1rem;
+  width: 16px;
+  height: 16px;
+  background: var(--red);
+  border-radius: 50%;
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+.wrapper .card .card-icon.active {
+  background: var(--green);
 }/*# sourceMappingURL=styles.css.map */
