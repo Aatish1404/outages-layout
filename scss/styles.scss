@@ -1,2 +1,64 @@
 @import 'variables.scss';
 @import 'general.scss';
+
+
+.wrapper{
+
+    width: 900px;
+    font-family: $Montserrat;
+
+    h1{
+         font-size: 40px;
+         color: var(--white);
+    }
+
+    h2{
+        font-size: 30px;
+        color: var(--white);
+    }
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--darkGrey);
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin:1rem 0;
+
+    .card-content {
+        margin: 0 15px;
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        h4 {
+          font-size: 18px;
+          color: var(--white);
+        }
+
+        h5 {
+            font-size: 15px;
+            color: var(--white);
+          }
+
+        p {
+          font-size: 15px;
+          color: var(--blue);
+        }
+      }
+
+      .card-timer {
+        font-size: 20px;
+        height: 1em;
+        flex-shrink: 0;
+        
+        .card-icon{
+
+        }
+       
+      }
+}
+
+}

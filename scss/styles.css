@@ -4,6 +4,8 @@
   --grey:#B1B2B5;
   --lightGrey:#d0d1d4;
   --darkGrey:#575758;
+  --blue:#0e48e9;
+  --darkBlue:#031853;
   --fullWidth: 1110px;
   --headerHeight:60px;
   --fullHeight: 600px;
@@ -21,5 +23,51 @@ body {
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--blue);
+  background-color: var(--darkBlue);
+}
+
+.wrapper {
+  width: 900px;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper h1 {
+  font-size: 40px;
+  color: var(--white);
+}
+.wrapper h2 {
+  font-size: 30px;
+  color: var(--white);
+}
+.wrapper .card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--darkGrey);
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.wrapper .card .card-content {
+  margin: 0 15px;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrapper .card .card-content h4 {
+  font-size: 18px;
+  color: var(--white);
+}
+.wrapper .card .card-content h5 {
+  font-size: 15px;
+  color: var(--white);
+}
+.wrapper .card .card-content p {
+  font-size: 15px;
+  color: var(--blue);
+}
+.wrapper .card .card-timer {
+  font-size: 20px;
+  height: 1em;
+  flex-shrink: 0;
 }/*# sourceMappingURL=styles.css.map */
