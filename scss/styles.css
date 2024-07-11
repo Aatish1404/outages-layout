@@ -31,13 +31,30 @@ body {
   width: var(--fullWidth);
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (width < 1024px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+  }
+}
 .wrapper h1 {
   font-size: 40px;
   color: var(--white);
 }
+@media screen and (width < 1024px) {
+  .wrapper h1 {
+    font-size: 30px;
+  }
+}
 .wrapper h2 {
   font-size: 30px;
   color: var(--white);
+}
+@media screen and (width < 1024px) {
+  .wrapper h2 {
+    font-size: 20px;
+  }
 }
 .wrapper .card {
   display: flex;
@@ -49,12 +66,22 @@ body {
   margin: 1rem 0;
   gap: 1rem;
 }
+@media screen and (width < 640px) {
+  .wrapper .card {
+    display: block;
+  }
+}
 .wrapper .card .card-content {
   margin: 0 15px;
   flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (width < 640px) {
+  .wrapper .card .card-content {
+    margin: 0;
+  }
 }
 .wrapper .card .card-content h4 {
   font-size: 18px;

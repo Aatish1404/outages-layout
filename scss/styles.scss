@@ -7,14 +7,28 @@
     width: var(--fullWidth);
     font-family: $Montserrat;
 
+    @media screen and (width < 1024px) {
+        width: 100%;
+        padding: 0 1rem;
+        position: relative;
+    }
+
     h1{
          font-size: 40px;
          color: var(--white);
+
+         @media screen and (width < 1024px) {
+            font-size: 30px;
+         }
     }
 
     h2{
         font-size: 30px;
         color: var(--white);
+
+        @media screen and (width < 1024px) {
+            font-size: 20px;
+        }
     }
 
 .card {
@@ -27,12 +41,23 @@
     margin: 1rem 0;
     gap: 1rem;
 
+    @media screen and (width < 640px) {
+        display: block;
+     }
+
+  
+
+
     .card-content {
         margin: 0 15px;
         flex-grow: 1;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @media screen and (width < 640px) {
+            margin:0;
+         }
         
         h4 {
           font-size: 18px;
